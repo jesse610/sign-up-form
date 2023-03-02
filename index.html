@@ -35,7 +35,8 @@
                                 type="text" 
                                 name="first_name" 
                                 id="fname" 
-                                required="required">
+                                required="required"
+                                placeholder="John">
                             </label>
 
                             <label class="right" for="lname">LAST NAME
@@ -43,27 +44,53 @@
                                 type="text" 
                                 name="last_name" 
                                 id="lname"
-                                required="required">
+                                required="required"
+                                placeholder="Appleseed">
                             </label>
                         </p>
 
                         <p>
                             <label class="left" for="mail">EMAIL
-                                <input type="email" name="user_email" id="mail" required="required">
+                                <input 
+                                type="email" 
+                                name="user_email" 
+                                id="mail"
+                                required="required" 
+                                placeholder="JohnAppleseed@example.com">
                             </label>
 
                             <label class="right" for="pnumber">PHONE NUMBER
-                                <input type="tel" name="user_phone" id="pnumber" required="required">
+                                <input 
+                                type="tel" 
+                                name="user_phone" 
+                                id="pnumber" 
+                                required="required"
+                                pattern="^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$"
+                                placeholder="123 - 456 - 7890">
                             </label>
                         </p>
 
                         <p>
                             <label class="left" for="pword">PASSWORD
-                                <input type="password" name="user_password" id="pword" required="required">
+                                <input 
+                                type="password" 
+                                name="user_password" 
+                                id="pword" 
+                                required="required"
+                                placeholder="5-20 characters"
+                                minlength="5"
+                                maxlength="20">
                             </label>
 
                             <label class="right" for="pword_confirm">CONFIRM PASSWORD
-                                <input type="password" name="user_phone" id="pword_confirm" required="required">
+                                <input 
+                                type="password" 
+                                name="user_phone" 
+                                id="pword_confirm" 
+                                required="required"
+                                placeholder="reconfirm password"
+                                minlength="5"
+                                maxlength="20">
                             </label>
                         </p>
                     </form>
