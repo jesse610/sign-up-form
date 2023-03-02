@@ -120,6 +120,18 @@
     height: 1.8rem;
 }
 
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:placeholder-shown {
+    border: 2px solid black;
+}
+
 .form-container input:focus {
     outline: none;
     border: 1px solid blue;
@@ -130,6 +142,21 @@
 .right {
     display: flex;
     flex-direction: column;
+}
+
+.submit-container button {
+    width: 15rem;
+    border: none;
+    color: white;
+    background-color: rgba(88, 78, 78, 0.922);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.414);
+    cursor: pointer;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+
+.submit-container button:hover {
+    background-color: rgb(78, 78, 192);
 }
 
 
