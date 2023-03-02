@@ -1,0 +1,143 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+.main {
+    height: 100vh;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-width: 30%;
+    background-image: url("./img/background1.jpg");
+    text-align: center;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43%;
+    font-size: 3rem;
+    font-family: 'Pacifico';
+}
+
+.logo-bk {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.23);
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    height: 100%;
+    font-family: 'Tilt Neon';
+    background-color: rgb(231, 238, 249);
+    overflow: visible;
+}
+
+.para-container,
+.form-container,
+.submit-container {
+    height: 33.33%;
+    padding-left: 3.5rem;
+    padding-right: 10rem;
+}
+
+.para-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.submit-container button {
+    width: 10rem;
+}
+
+.form-container {
+    background-color: white;
+    height: 36%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.414);
+}
+
+.form-container p {
+    display: flex;
+    gap: 4rem;
+    min-width: 100%;
+}
+
+.form-container label {
+    font-size: 0.8rem;
+}
+
+.form-container input {
+    border: 2px solid rgba(207, 201, 201, 0.703);
+    border-radius: 3px;
+    width: 15rem;
+    height: 1.8rem;
+}
+
+.form-container input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.414);
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url(./fonts/Pacifico.ttf);
+}

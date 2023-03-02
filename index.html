@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./img/clipart2507419.png" alt="surfer logo">
+                    <span>The Surf Club</span>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="para-container">
+                    <p>This is not a real online service! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur explicabo ad ab. Sequi, nulla eum. Totam, ipsam. Doloremque, nostrum veritatis?</p>
+                </div>
+                <div class="form-container">
+                    <form action="#" method="post" id="main-form">
+                        <h1>Let's rip some waves!</h1>
+
+                        <p>
+                            <label class="left" for="fname">FIRST NAME
+                                <input 
+                                type="text" 
+                                name="first_name" 
+                                id="fname" 
+                                required="required">
+                            </label>
+
+                            <label class="right" for="lname">LAST NAME
+                                <input 
+                                type="text" 
+                                name="last_name" 
+                                id="lname"
+                                required="required">
+                            </label>
+                        </p>
+
+                        <p>
+                            <label class="left" for="mail">EMAIL
+                                <input type="email" name="user_email" id="mail" required="required">
+                            </label>
+
+                            <label class="right" for="pnumber">PHONE NUMBER
+                                <input type="tel" name="user_phone" id="pnumber" required="required">
+                            </label>
+                        </p>
+
+                        <p>
+                            <label class="left" for="pword">PASSWORD
+                                <input type="password" name="user_password" id="pword" required="required">
+                            </label>
+
+                            <label class="right" for="pword_confirm">CONFIRM PASSWORD
+                                <input type="password" name="user_phone" id="pword_confirm" required="required">
+                            </label>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" form="main-form">CREATE ACCOUNT</button>
+                    <span>Already have an account? <a href="#">Log in</a></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
