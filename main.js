@@ -1,6 +1,7 @@
 const passwordField = document.querySelector('#pword')
 const confirmPasswordField = document.querySelector('#pword_confirm')
 const createAccountBtn = document.querySelector('#create-account-btn')
+const confirmErrorSpan = document.querySelector('#confirm-error')
 
 function checkMatchingPasswords() {
     let pass = '';
@@ -23,3 +24,12 @@ function checkMatchingPasswords() {
 }
 
 checkMatchingPasswords()
+
+createAccountBtn.addEventListener('click', (event) => {
+    if (passwordField.value != confirmPasswordField.value && passwordField.value != '') {
+        event.preventDefault()
+        confirmErrorSpan.textContent = "Please match password"
+        setTimeout(() => { 
+            confirmErrorSpan.textContent = "" }, "4000")
+    }
+})
