@@ -34,6 +34,7 @@
                                 <input 
                                 type="text" 
                                 name="first_name" 
+                                class="noJS" 
                                 id="fname" 
                                 required="required"
                                 placeholder="John">
@@ -42,7 +43,8 @@
                             <label class="right" for="lname">LAST NAME
                                 <input 
                                 type="text" 
-                                name="last_name" 
+                                name="last_name"
+                                class="noJS"  
                                 id="lname"
                                 required="required"
                                 placeholder="Appleseed">
@@ -53,7 +55,8 @@
                             <label class="left" for="mail">EMAIL
                                 <input 
                                 type="email" 
-                                name="user_email" 
+                                name="user_email"
+                                class="noJS" 
                                 id="mail"
                                 required="required" 
                                 placeholder="JohnAppleseed@example.com">
@@ -63,10 +66,11 @@
                                 <input 
                                 type="tel" 
                                 name="user_phone" 
+                                class="noJS" 
                                 id="pnumber" 
                                 required="required"
-                                pattern="^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$"
-                                placeholder="123 - 456 - 7890">
+                                pattern="^(\([0-9]{3}\)|[0-9]{3})[0-9]{3}[0-9]{4}$"
+                                placeholder="1234567890">
                             </label>
                         </p>
 
@@ -74,12 +78,14 @@
                             <label class="left" for="pword">PASSWORD
                                 <input 
                                 type="password" 
-                                name="user_password" 
+                                name="user_password"
+                                class="JS"
                                 id="pword" 
                                 required="required"
                                 placeholder="5-20 characters"
                                 minlength="5"
-                                maxlength="20">
+                                maxlength="20"
+                                >
                             </label>
 
                             <label class="right" for="pword_confirm">CONFIRM PASSWORD
@@ -97,7 +103,7 @@
                 </div>
 
                 <div class="submit-container">
-                    <button type="submit" form="main-form">CREATE ACCOUNT</button>
+                    <button id="create-account-btn" type="submit" form="main-form">CREATE ACCOUNT</button>
                     <span>Already have an account? <a href="#">Log in</a></span>
                 </div>
             </div>
