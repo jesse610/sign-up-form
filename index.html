@@ -37,7 +37,8 @@
                                 class="noJS" 
                                 id="fname" 
                                 required="required"
-                                placeholder="John">
+                                placeholder="John"
+                                title="Please enter a valid name.">
                             </label>
 
                             <label class="right" for="lname">LAST NAME
@@ -85,6 +86,7 @@
                                 placeholder="5-20 characters"
                                 minlength="5"
                                 maxlength="20"
+                                title="Please enter a valid password."
                                 >
                             </label>
 
@@ -97,6 +99,7 @@
                                 placeholder="reconfirm password"
                                 minlength="5"
                                 maxlength="20">
+                                <span id="confirm-error"></span>
                             </label>
                         </p>
                     </form>
