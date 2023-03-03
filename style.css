@@ -109,13 +109,13 @@
 
 .form-container label {
     font-size: 0.8rem;
-    width: 24%;
+    width: 15rem;
 }
 
 .form-container input {
     border: 2px solid rgba(207, 201, 201, 0.703);
     border-radius: 3px;
-    height: 1.8rem;
+    height: 2rem;
 }
 
 .noJS:valid,
