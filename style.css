@@ -118,16 +118,19 @@
     height: 1.8rem;
 }
 
-input:valid {
+.noJS:valid,
+.JS:valid {
     border: 2px solid green;
 }
 
-input:invalid {
+.noJS:invalid,
+.JS:invalid {
     border: 2px solid red;
 }
 
-input:placeholder-shown {
-    border: 2px solid black;
+.noJS:placeholder-shown,
+.JS:placeholder-shown {
+    border: 2px solid rgba(207, 201, 201, 0.703);
 }
 
 .form-container input:focus {
@@ -166,7 +169,6 @@ input:placeholder-shown {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 /******************************************
 /* ADDITIONAL STYLES
